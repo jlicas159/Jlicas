@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="option_1">Option 1</string>
-    <string name="option_2">Option 2</string>
-    <string name="option_3">Option 3</string>
-    <string name="submit">Submit</string>
-    <string name="question">Question</string>
+    <string name="facebook">https://www.facebook.com/</string>
+    <string name="instagram">https://www.instagram.com/</string>
+    <string name="yahoo">https://mail.yahoo.com/</string>
+    <string name="usern">username</string>
+    <string name="pass">password</string>
+    <string name="login">Sign in</string>
+    <string name="login_or"> or sign in with</string>
+    <string name="goto_register">not a member yet? Register</string>
+    <string name="forgot">Forgot password?</string>
 </resources>

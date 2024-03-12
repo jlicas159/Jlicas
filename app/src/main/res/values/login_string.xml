@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">My Application</string>
-    <string name="uname_hint">Option 1</string>
-    <string name="password_hint">Option 2</string>
-    <string name="login_btn">Option 3</string>
-    <string name="login_or">Submit</string>
-    <string name="goto_register">Question</string>
-</resources>
