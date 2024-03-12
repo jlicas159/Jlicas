@@ -4,15 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cyan"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/questionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/question"
+        android:background="@color/dark_blue"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/questionTextView"
+        app:layout_constraintTop_toTopOf="@+id/questionTextView">
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="324dp"
+        android:text="@string/submit"
+        app:layout_constraintStart_toStartOf="@+id/questionTextView"
+        app:layout_constraintTop_toTopOf="@+id/questionTextView" />
+
+    <RadioButton
+        android:id="@+id/option1RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/option_1"
+        android:background="@color/dark_blue"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/questionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
+
+    <RadioButton
+        android:id="@+id/option2RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/option_2"
+        android:background="@color/dark_blue"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/option1RadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/option1RadioButton" />
+
+    <RadioButton
+        android:id="@+id/option3RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/option_3"
+        android:background="@color/dark_blue"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/option2RadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/option2RadioButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
